@@ -1,0 +1,60 @@
+block link
+  -var selected = 'Обо мне';
+
+extends ../layouts/main_layout.jade
+
+block title
+  title Главная страница 
+
+block content
+  section.aboutbox
+    h2.aboutbox-header Основная информация
+    .aboutbox-body.clearfix
+      .image-wrap
+        .avatar-box
+          img.avatar(src="img/face.png", alt="Гомер Симпсон")
+      .worksheet-wrap
+        ul.worksheet-list
+          li.worksheet-item.clearfix
+            .worksheet-what Меня зовут:
+            .worksheet-info Гомер Симпсон
+          li.worksheet-item.clearfix
+            .worksheet-what Мой возраст:
+            .worksheet-info 40 лет
+          li.worksheet-item.clearfix
+            .worksheet-what Мой город:
+            .worksheet-info Санкт Петербург, Россия
+          li.worksheet-item.clearfix
+            .worksheet-what Моя специализация:
+            .worksheet-info FRONTEND разработчик
+          .worksheet-item.clearfix
+            .worksheet-what Ключевые навыки:
+            .worksheet-info.skills
+              ul.skills-list
+                li.skill-item html
+                li.skill-item css
+                li.skill-item javascript
+                li.skill-item gulp
+                li.skill-item git
+  //- Опыт работы
+  section.aboutbox
+    h2.aboutbox-header Опыт работы
+    .aboutbox-body
+      ul.aboutbox-list
+        li.aboutbox-item.icon-work
+          .where "ИП Боровицкий" - Продавец дисков
+          .period Сентябрь 2005 - Август 2008
+        li.aboutbox-item.icon-work
+          .where "ООО Системы безопастности" - Системный администратор
+          .period Июнь 2008 - Июль 2010
+  //- Образование
+  section.aboutbox
+    h2.aboutbox-header Опыт работы
+    .aboutbox-body
+      ul.aboutbox-list
+        li.aboutbox-item.icon-college
+          .where Незаконченное высшее. СПБНИУ ИТМО
+          .period ктябрь 2012 - по настоящее время
+        li.aboutbox-item.icon-course
+          .where Курсы Loftschool
+          .period Ноябрь 2014 - по настоящее время

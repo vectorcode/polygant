@@ -1,0 +1,8 @@
+{
+  "name": "front_prj",
+  "dependencies": {
+    "jquery": "1.11",
+    "normalize.css": "~3.0.3",
+    "modernizer": "~2.8.2"
+  }
+}
