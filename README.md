@@ -2,7 +2,7 @@
 
 Для запуска:
 
-0. git clone https://github.com/kovaldn/front_prj my_prj
+0. git clone https://github.com/vectorcode/front_prj.git my_prj
 1. npm i
 2. bower i
 3. gulp - Задача по-умолчанию ['server', 'watch']
