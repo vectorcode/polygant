@@ -127,7 +127,7 @@
 	  	addSlider(slider_2,range_2,inpSlider_2,result_2);
 
 
-		bnrImg.on('click', function(event) {// клик по баннеру
+		bnrImg.hover(function(){// клик по баннеру
 			event.preventDefault();
 			clc.show('fast');
 		});
