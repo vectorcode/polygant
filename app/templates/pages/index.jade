@@ -1,60 +1,122 @@
-block link
-  -var selected = 'Обо мне';
-
 extends ../layouts/main_layout.jade
 
 block title
-  title Главная страница 
+  title Тестовое задание Павла Кондакова 
 
 block content
-  section.aboutbox
-    h2.aboutbox-header Основная информация
-    .aboutbox-body.clearfix
-      .image-wrap
-        .avatar-box
-          img.avatar(src="img/face.png", alt="Гомер Симпсон")
-      .worksheet-wrap
-        ul.worksheet-list
-          li.worksheet-item.clearfix
-            .worksheet-what Меня зовут:
-            .worksheet-info Гомер Симпсон
-          li.worksheet-item.clearfix
-            .worksheet-what Мой возраст:
-            .worksheet-info 40 лет
-          li.worksheet-item.clearfix
-            .worksheet-what Мой город:
-            .worksheet-info Санкт Петербург, Россия
-          li.worksheet-item.clearfix
-            .worksheet-what Моя специализация:
-            .worksheet-info FRONTEND разработчик
-          .worksheet-item.clearfix
-            .worksheet-what Ключевые навыки:
-            .worksheet-info.skills
-              ul.skills-list
-                li.skill-item html
-                li.skill-item css
-                li.skill-item javascript
-                li.skill-item gulp
-                li.skill-item git
-  //- Опыт работы
-  section.aboutbox
-    h2.aboutbox-header Опыт работы
-    .aboutbox-body
-      ul.aboutbox-list
-        li.aboutbox-item.icon-work
-          .where "ИП Боровицкий" - Продавец дисков
-          .period Сентябрь 2005 - Август 2008
-        li.aboutbox-item.icon-work
-          .where "ООО Системы безопастности" - Системный администратор
-          .period Июнь 2008 - Июль 2010
-  //- Образование
-  section.aboutbox
-    h2.aboutbox-header Опыт работы
-    .aboutbox-body
-      ul.aboutbox-list
-        li.aboutbox-item.icon-college
-          .where Незаконченное высшее. СПБНИУ ИТМО
-          .period ктябрь 2012 - по настоящее время
-        li.aboutbox-item.icon-course
-          .where Курсы Loftschool
-          .period Ноябрь 2014 - по настоящее время
+  .bnr
+    img.bnr-img(src="img/banner.jpg", alt="")
+    .clc
+      .clc-head
+        .clc-head-close
+        .clc-head-text Рассчитайте сумму ежемесячного платежа в нескольких банках
+      .clc-cont
+        .clc-cont-title Информация о кредите
+          span.clc-cont-title-stp Шаг: 
+            span.clc-cont-title-stp-n 1 
+            | из 4
+        .clc-cont-mess 
+        form.clc-cont-form(id="clc-form", action="/")
+
+
+          .stp(data-stp="1")
+            .form-item
+              label.item-lable(for="summ-credit") Сумма кредита: 
+                span.item-lable-i (рублей)
+              input.item-input.hide(type="text", name="summ-credit", id="summ-credit")
+              .slider
+                .slider-cntr(id='slider-summ-credit')
+                .slider-scale
+                   .slider-scale-min 50 000
+                   .slider-scale-max 1 000 000
+            //form-item
+            .form-item
+              label.item-lable(for="time-credit") Срок кредитования:  
+                span.item-lable-i (месяцев)
+              input.item-input.hide( type="text", name="time-credit", id="time-credit")
+              .slider
+                .slider-cntr(id='slider-time-credit')
+                .slider-scale
+                   .slider-scale-min 01
+                   .slider-scale-max 60
+            //form-item
+            .form-item.ftr
+              input.item-button(type="button", value="Продолжить")
+            //form-item
+
+
+          .stp(data-stp="2")
+            .form-item
+              .form-item-l.w-84
+                label.item-lable(for="age") Ваш возраст: 
+                input.item-input( type="text", name="age", id="age",  class="validete", data-errtxt="Возраст – от 18 до 60 лет", data-min="18",  data-max="60", data-valtype="age",  placeholder="25")
+              .form-item-r.w-207
+                label.item-lable(for="delay") Есть просрочки по кредитам?  
+                select.item-select(name="delay")
+                  option.item-option(value="0") нет
+                  option.item-option(value="1") есть теущие
+            //form-item
+            .form-item
+              .form-item-title Вы гражданин РФ?
+              input.item-radio(type="radio", name="citizen", value="1" checked="checked")
+              label.item-lable.fll(for="citizen") Да
+              input.item-radio(type="radio", name="citizen", value="0")
+              label.item-lable.fll(for="citizen") Нет
+            //form-item
+            .form-item.ftr
+              input.item-button(type="button", value="Продолжить")
+            //form-item
+
+
+          .stp(data-stp="3")
+            .form-item
+              label.item-lable(for="registered") Где Вы зарегистрированы? 
+              select.item-select(name="registered")
+                option.item-option(value="0") 0
+                option.item-option(value="1") 1
+            //form-item
+
+            .form-item
+              label.item-lable(for="live") Где Вы проживаете? 
+              select.item-select(name="live")
+                option.item-option(value="0") 0
+                option.item-option(value="1") 1
+            //form-item
+
+            .form-item
+              label.item-lable(for="length_work") Стаж работы: 
+              select.item-select(name="length_work")
+                option.item-option(value="0") 0
+                option.item-option(value="1") 1
+            //form-item
+            .form-item
+              .form-item-l
+                label.item-lable(for="income") Ваш подтвержденный доход (руб.):
+              .form-item-r
+                input.item-input(type="text", name="income")
+            //form-item
+            .form-item.ftr
+              input.item-button(type="button", value="Продолжить")
+            //form-item
+          
+
+          .stp(data-stp="4")
+            .form-item
+              label.item-lable(for="name") Ваше имя: 
+              input.item-input(type="text", name="name")
+            //form-item
+            .form-item
+              label.item-lable(for="email") E-mail: 
+              input.item-input(type="text", name="email")
+            //form-item
+            .form-item
+              .form-item-l
+                label.item-lable(for="phone") Мобильный телефон:
+                input.item-input(type="text", name="phone", placeholder="+7(___)________")
+            //form-item
+            .form-item.ftr
+              input.item-button(type="submit", value="Продолжить")
+            //form-item
+
+
+

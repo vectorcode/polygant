@@ -179,9 +179,9 @@ var log = function (error) {
 gulp.task( 'deploy', function() {
 
   var conn = ftp.create( {
-      host:     'dz1.kovalchuk.us',
-      user:     'kovaldn_test',
-      password: 'changed',
+      host:     'polygant.pavelkondakov.ru',
+      user:     'atlant01_polygan',
+      password: 'GKdtAZRa',
       parallel: 10,
       log: gutil.log
   } );

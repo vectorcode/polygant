@@ -1,8 +1,8 @@
-> front_prj - это база для развёртывания frontend проекта. Включает в себя, Gulp, Sass, Jade, минификацию и конканинацию файлов, deploy на боевой сервер
+> Тестопое задание выполнено использую технологии HTML, CSS, Javascript, Jade,Sass, Gulp, Git. Скомпелированная версия проекта находится в папке dist (после команды gulp build) и на сайте http://polygant.pavelkondakov.ru/ (команда для обновления gulp deploy).
 
 Для запуска:
 
-0. git clone https://github.com/vectorcode/front_prj.git my_prj
+0. git clone https://github.com/vectorcode/polygant.git polygant
 1. npm i
 2. bower i
 3. gulp - Задача по-умолчанию ['server', 'watch']

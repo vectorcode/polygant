@@ -2,24 +2,7 @@ doctype html
 html(lang="ru-RU")
   include ../common/head.jade
   body
-    <!--[if lt IE 7]>
-    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
-    <![endif]-->
-    .wrapper
-      .main-content
-        //- Шапка
-        include ../common/header.jade
-        .container  
-          //- Левые блоки
-          aside.sidebar
-            //- Навигация
-            include ../common/navigate.jade
-            //- Контакты
-            include ../common/contacts.jade      
-          //- Изменяемый контент
-          .variable-content
-            //- Изменяемая часть каждой страницы
-            block content
+    block content
     include ../common/footer.jade  
         
          

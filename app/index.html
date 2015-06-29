@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Главная страница </title>
+    <title>Тестовое задание Павла Кондакова </title>
     <meta name="description" content="loftschool_homework">
     <meta name="keywords" content="loftschool_homework">
     <meta name="author" content="Gomer Simpson">
@@ -13,21 +13,12 @@
     <!-- build:css css/vendor.min.css -->
     <!-- bower:css-->
     <link rel="stylesheet" href="/bower/normalize.css/normalize.css">
-    <link rel="stylesheet" href="/bower/qtip2/jquery.qtip.css">
+    <link rel="stylesheet" href="/bower/jquery-ui/themes/base/jquery-ui.min.css">
+    <!-- endbower -->
     <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css fonts/fonts.min.css -->
-    <link rel="stylesheet" href="fonts/fira.css">
-    <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
-    <!-- endbuild -->
     <!-- build:css css/main.min.css -->
-    <link rel="stylesheet" href="css/about_me_page.css">
-    <link rel="stylesheet" href="css/my_work_page.css">
-    <link rel="stylesheet" href="css/contact_me.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/form_elements.css">
-    <link rel="stylesheet" href="css/login.css">
     <!-- endbuild -->
     <!-- build:js js/modernizr.min.js -->
     <script src="bower/modernizer/modernizr.js"></script>
@@ -35,134 +26,148 @@
   </head>
 
   <body>
-    <!--[if lt IE 7]>
-<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
-<![endif]-->
-    <div class="wrapper">
-      <div class="main-content">
-        <header class="page-header">
-          <div class="container-big">
-            <a class="header-logo-link"><img src="img/logo.png" alt="logo" class="logo-img"><span class="header-logo-text">Сайт портфолио</span></a>
-            <ul class="socials">
-              <li class="socials-item">
-                <a href="" target="_blank" class="socials-link vk"></a>
-              </li>
-              <li class="socials-item">
-                <a href="" target="_blank" class="socials-link tw"></a>
-              </li>
-              <li class="socials-item">
-                <a href="" target="_blank" class="socials-link fb"></a>
-              </li>
-              <li class="socials-item">
-                <a href="" target="_blank" class="socials-link gt"></a>
-              </li>
-            </ul>
+    <div class="bnr"><img src="img/banner.jpg" alt="" class="bnr-img">
+      <div class="clc">
+        <div class="clc-head">
+          <div class="clc-head-close"></div>
+          <div class="clc-head-text">Рассчитайте сумму ежемесячного платежа в нескольких банках</div>
+        </div>
+        <div class="clc-cont">
+          <div class="clc-cont-title">Информация о кредите<span class="clc-cont-title-stp">Шаг: <span class="clc-cont-title-stp-n">1 </span>из 4</span>
           </div>
-        </header>
-        <div class="container">
-          <aside class="sidebar">
-            <nav class="navigation">
-              <ul class="navigation-list">
-                <li class="navigation-item current"><a href="/" class="navigation-link">Обо мне</a></li>
-                <li class="navigation-item"><a href="/my-work.html" class="navigation-link">Мои работы</a></li>
-                <li class="navigation-item"><a href="/contact-me.html" class="navigation-link">Связаться со мной</a></li>
-              </ul>
-            </nav><address class="contacts"><div class="contacts-header"><span class="header-inner-text">Контакты</span></div><ul class="contacts-list"><li class="contacts-item contacts-item-mail"><a href="" class="contacts-link"><span class="contact-text">mail@gmail.com</span></a></li><li class="contacts-item contacts-item-phone"><a href="" class="contacts-link"><span class="contact-text">+8989898989</span></a></li><li class="contacts-item contacts-item-skype"><a href="" class="contacts-link"><span class="contact-text">skype_gomer</span></a></li></ul></address></aside>
-          <div
-          class="variable-content">
-            <section class="aboutbox">
-              <h2 class="aboutbox-header">Основная информация</h2>
-              <div class="aboutbox-body clearfix">
-                <div class="image-wrap">
-                  <div class="avatar-box"><img src="img/face.png" alt="Гомер Симпсон" class="avatar"></div>
-                </div>
-                <div class="worksheet-wrap">
-                  <ul class="worksheet-list">
-                    <li class="worksheet-item clearfix">
-                      <div class="worksheet-what">Меня зовут:</div>
-                      <div class="worksheet-info">Гомер Симпсон</div>
-                    </li>
-                    <li class="worksheet-item clearfix">
-                      <div class="worksheet-what">Мой возраст:</div>
-                      <div class="worksheet-info">40 лет</div>
-                    </li>
-                    <li class="worksheet-item clearfix">
-                      <div class="worksheet-what">Мой город:</div>
-                      <div class="worksheet-info">Санкт Петербург, Россия</div>
-                    </li>
-                    <li class="worksheet-item clearfix">
-                      <div class="worksheet-what">Моя специализация:</div>
-                      <div class="worksheet-info">FRONTEND разработчик</div>
-                    </li>
-                    <div class="worksheet-item clearfix">
-                      <div class="worksheet-what">Ключевые навыки:</div>
-                      <div class="worksheet-info skills">
-                        <ul class="skills-list">
-                          <li class="skill-item">html</li>
-                          <li class="skill-item">css</li>
-                          <li class="skill-item">javascript</li>
-                          <li class="skill-item">gulp</li>
-                          <li class="skill-item">git</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </ul>
+          <div class="clc-cont-mess"> </div>
+          <form id="clc-form" action="/" class="clc-cont-form">
+            <div data-stp="1" class="stp">
+              <div class="form-item">
+                <label for="summ-credit" class="item-lable">Сумма кредита: <span class="item-lable-i">(рублей)</span></label>
+                <input type="text" name="summ-credit" id="summ-credit" class="item-input hide">
+                <div class="slider">
+                  <div id="slider-summ-credit" class="slider-cntr"></div>
+                  <div class="slider-scale">
+                    <div class="slider-scale-min">50 000</div>
+                    <div class="slider-scale-max">1 000 000</div>
+                  </div>
                 </div>
               </div>
-            </section>
-            <section class="aboutbox">
-              <h2 class="aboutbox-header">Опыт работы</h2>
-              <div class="aboutbox-body">
-                <ul class="aboutbox-list">
-                  <li class="aboutbox-item icon-work">
-                    <div class="where">"ИП Боровицкий" - Продавец дисков</div>
-                    <div class="period">Сентябрь 2005 - Август 2008</div>
-                  </li>
-                  <li class="aboutbox-item icon-work">
-                    <div class="where">"ООО Системы безопастности" - Системный администратор</div>
-                    <div class="period">Июнь 2008 - Июль 2010</div>
-                  </li>
-                </ul>
+              <!--form-item-->
+              <div class="form-item">
+                <label for="time-credit" class="item-lable">Срок кредитования: <span class="item-lable-i">(месяцев)</span></label>
+                <input type="text" name="time-credit" id="time-credit" class="item-input hide">
+                <div class="slider">
+                  <div id="slider-time-credit" class="slider-cntr"></div>
+                  <div class="slider-scale">
+                    <div class="slider-scale-min">01</div>
+                    <div class="slider-scale-max">60</div>
+                  </div>
+                </div>
               </div>
-            </section>
-            <section class="aboutbox">
-              <h2 class="aboutbox-header">Опыт работы</h2>
-              <div class="aboutbox-body">
-                <ul class="aboutbox-list">
-                  <li class="aboutbox-item icon-college">
-                    <div class="where">Незаконченное высшее. СПБНИУ ИТМО</div>
-                    <div class="period">ктябрь 2012 - по настоящее время</div>
-                  </li>
-                  <li class="aboutbox-item icon-course">
-                    <div class="where">Курсы Loftschool</div>
-                    <div class="period">Ноябрь 2014 - по настоящее время</div>
-                  </li>
-                </ul>
+              <!--form-item-->
+              <div class="form-item ftr">
+                <input type="button" value="Продолжить" class="item-button">
               </div>
-            </section>
+              <!--form-item-->
+            </div>
+            <div data-stp="2" class="stp">
+              <div class="form-item">
+                <div class="form-item-l w-84">
+                  <label for="age" class="item-lable">Ваш возраст: </label>
+                  <input type="text" name="age" id="age" data-errtxt="Возраст – от 18 до 60 лет" data-min="18" data-max="60" data-valtype="age" placeholder="25" class="item-input validete">
+                </div>
+                <div class="form-item-r w-207">
+                  <label for="delay" class="item-lable">Есть просрочки по кредитам? </label>
+                  <select name="delay" class="item-select">
+                    <option value="0" class="item-option">нет</option>
+                    <option value="1" class="item-option">есть теущие</option>
+                  </select>
+                </div>
+              </div>
+              <!--form-item-->
+              <div class="form-item">
+                <div class="form-item-title">Вы гражданин РФ?</div>
+                <input type="radio" name="citizen" value="1" checked="checked" class="item-radio">
+                <label for="citizen" class="item-lable fll">Да</label>
+                <input type="radio" name="citizen" value="0" class="item-radio">
+                <label for="citizen" class="item-lable fll">Нет</label>
+              </div>
+              <!--form-item-->
+              <div class="form-item ftr">
+                <input type="button" value="Продолжить" class="item-button">
+              </div>
+              <!--form-item-->
+            </div>
+            <div data-stp="3" class="stp">
+              <div class="form-item">
+                <label for="registered" class="item-lable">Где Вы зарегистрированы? </label>
+                <select name="registered" class="item-select">
+                  <option value="0" class="item-option">0</option>
+                  <option value="1" class="item-option">1</option>
+                </select>
+              </div>
+              <!--form-item-->
+              <div class="form-item">
+                <label for="live" class="item-lable">Где Вы проживаете? </label>
+                <select name="live" class="item-select">
+                  <option value="0" class="item-option">0</option>
+                  <option value="1" class="item-option">1</option>
+                </select>
+              </div>
+              <!--form-item-->
+              <div class="form-item">
+                <label for="length_work" class="item-lable">Стаж работы: </label>
+                <select name="length_work" class="item-select">
+                  <option value="0" class="item-option">0</option>
+                  <option value="1" class="item-option">1</option>
+                </select>
+              </div>
+              <!--form-item-->
+              <div class="form-item">
+                <div class="form-item-l">
+                  <label for="income" class="item-lable">Ваш подтвержденный доход (руб.):</label>
+                </div>
+                <div class="form-item-r">
+                  <input type="text" name="income" class="item-input">
+                </div>
+              </div>
+              <!--form-item-->
+              <div class="form-item ftr">
+                <input type="button" value="Продолжить" class="item-button">
+              </div>
+              <!--form-item-->
+            </div>
+            <div data-stp="4" class="stp">
+              <div class="form-item">
+                <label for="name" class="item-lable">Ваше имя: </label>
+                <input type="text" name="name" class="item-input">
+              </div>
+              <!--form-item-->
+              <div class="form-item">
+                <label for="email" class="item-lable">E-mail: </label>
+                <input type="text" name="email" class="item-input">
+              </div>
+              <!--form-item-->
+              <div class="form-item">
+                <div class="form-item-l">
+                  <label for="phone" class="item-lable">Мобильный телефон:</label>
+                  <input type="text" name="phone" placeholder="+7(___)________" class="item-input">
+                </div>
+              </div>
+              <!--form-item-->
+              <div class="form-item ftr">
+                <input type="submit" value="Продолжить" class="item-button">
+              </div>
+              <!--form-item-->
+            </div>
+          </form>
         </div>
       </div>
     </div>
-    </div>
-    <footer class="page-footer">
-      <div class="container">
-        <div class="lock"><a href="/login.html" class="lock-inner">Войти</a></div>
-        <div class="copyright">© 2015, Это сайт Гомера, пожалуйста, не копируйте и не воруйте его</div>
-      </div>
-    </footer>
     <!-- build:js js/vendor.js -->
     <!--bower:js-->
     <script src="/bower/jquery/dist/jquery.js"></script>
-    <script src="/bower/bpopup/jquery.bpopup.js"></script>
-    <script src="/bower/jquery-placeholder/jquery.placeholder.js"></script>
-    <script src="/bower/qtip2/jquery.qtip.js"></script>
+    <script src="/bower/jquery-ui/jquery-ui.js"></script>
     <!--endbower  -->
     <!-- endbuild -->
     <!-- build:js js/main.js -->
-    <script src="js/login.js"></script>
-    <script src="js/add_project.js"></script>
-    <script src="js/validation.js"></script>
-    <script src="js/contact_me.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <!-- endbuild -->
