@@ -180,8 +180,8 @@ gulp.task( 'deploy', function() {
 
   var conn = ftp.create( {
       host:     'polygant.pavelkondakov.ru',
-      user:     'atlant01_polygan',
-      password: 'GKdtAZRa',
+      user:     '',
+      password: '',
       parallel: 10,
       log: gutil.log
   } );
